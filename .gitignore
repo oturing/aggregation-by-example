@@ -1,5 +1,6 @@
 *.py[co]
-
+.sphinx
+_build/
 # Packages
 *.egg
 *.egg-info
