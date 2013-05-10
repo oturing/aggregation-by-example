@@ -1,0 +1,38 @@
+[
+    {
+        "titulo": "The Annotated Alice", 
+        "idioma": "en"
+    }, 
+    {
+        "titulo": "Science: Good, Bad, and Bogus", 
+        "idioma": "en"
+    }, 
+    {
+        "titulo": "Science Fiction Puzzle Tales", 
+        "idioma": "en"
+    }, 
+    {
+        "titulo": "Symbolic Logic & The Game of Logic", 
+        "idioma": "en"
+    }, 
+    {
+        "titulo": "Alice no País das Maravilhas", 
+        "idioma": "pt-br"
+    }, 
+    {
+        "titulo": "Aritmética da Emília", 
+        "idioma": "pt-br"
+    }, 
+    {
+        "titulo": "Introduction to Logic", 
+        "idioma": "en"
+    }, 
+    {
+        "titulo": "Fundamentals of Database Systems", 
+        "idioma": "en"
+    }, 
+    {
+        "titulo": "Bancos de Dados", 
+        "idioma": "pt-br"
+    }
+]

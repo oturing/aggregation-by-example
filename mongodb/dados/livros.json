@@ -44,7 +44,7 @@
       { "ano": 2011, "qtd": 1 }
     ],
     "assuntos": [ "lógica", "quebra-cabeças" ],
-    "estoque": 1
+    "estoque": 0
   },
   { "_id": "0486204928",
     "titulo": "Symbolic Logic & The Game of Logic",
@@ -112,11 +112,11 @@
     "estoque": 5
   },
   { "_id": "0136086209",
-    "titulo": "Fundamentals of Database Systems" },
+    "titulo": "Fundamentals of Database Systems",
     "criadores": [
       { "papel": "author", "nome": "Ramez Elmasri" },
-      { "papel": "author", "nome": "Shamkant Navathe" },
-    ]
+      { "papel": "author", "nome": "Shamkant Navathe" }
+    ],
     "idioma": "en",
     "paginas": 1200,
     "preco": { "moeda": "USD", "valor": 145.40 },
@@ -125,5 +125,22 @@
     ],
     "assuntos": [ "bancos de dados", "relacional" ],
     "estoque": 2
+  },
+  { "_id": "8521203616",
+    "titulo": "Bancos de Dados",
+    "criadores": [
+      { "papel": "author", "nome": "Valdemar W. Setzer" },
+      { "papel": "author", "nome": "Flávio Soares Corrêa da Silva" }
+    ],
+    "idioma": "pt-br",
+    "paginas": 392,
+    "preco": { "moeda": "BRL", "valor": 79.50 },
+    "vendas": [
+      { "ano": 2009, "qtd": 3 },
+      { "ano": 2010, "qtd": 1 },
+      { "ano": 2011, "qtd": 0 }
+    ],
+    "assuntos": [ "bancos de dados", "lógica", "relacional" ],
+    "estoque": 0
   }
 ]

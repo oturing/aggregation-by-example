@@ -1,0 +1,10 @@
+{
+    "$project" : {
+        "_id" : 0,
+        "titulo" : 1,
+        "idioma" : 1
+    }
+}
+
+
+

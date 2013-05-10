@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# Aggregation by Example documentation build configuration file, created by
-# sphinx-quickstart on Fri May 10 01:19:17 2013.
+# Agregação documentation build configuration file, created by
+# sphinx-quickstart on Fri May 10 09:25:41 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #
@@ -37,10 +37,10 @@ source_suffix = '.rst'
 #source_encoding = 'utf-8-sig'
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = 'README'
 
 # General information about the project.
-project = u'Aggregation by Example'
+project = u'Agregação'
 copyright = u'2013, Luciano Ramalho'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -167,7 +167,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'AggregationbyExampledoc'
+htmlhelp_basename = 'Agregaodoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -186,7 +186,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'AggregationbyExample.tex', u'Aggregation by Example Documentation',
+  ('README', 'Agregao.tex', u'Agregação Documentation',
    u'Luciano Ramalho', 'manual'),
 ]
 
@@ -216,7 +216,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'aggregationbyexample', u'Aggregation by Example Documentation',
+    ('README', 'agregao', u'Agregação Documentation',
      [u'Luciano Ramalho'], 1)
 ]
 
@@ -230,8 +230,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'AggregationbyExample', u'Aggregation by Example Documentation',
-   u'Luciano Ramalho', 'AggregationbyExample', 'One line description of project.',
+  ('README', 'Agregao', u'Agregação Documentation',
+   u'Luciano Ramalho', 'Agregao', 'One line description of project.',
    'Miscellaneous'),
 ]
 

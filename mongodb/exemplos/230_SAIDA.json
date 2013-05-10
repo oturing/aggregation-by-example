@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "Science Fiction Puzzle Tales", 
+        "paginas": 148, 
+        "idioma": "en"
+    }, 
+    {
+        "titulo": "Alice no País das Maravilhas", 
+        "paginas": 48, 
+        "idioma": "pt-br"
+    }, 
+    {
+        "titulo": "Aritmética da Emília", 
+        "paginas": 128, 
+        "idioma": "pt-br"
+    }, 
+    {
+        "titulo": "Bancos de Dados", 
+        "paginas": 380, 
+        "idioma": "pt-br"
+    }
+]

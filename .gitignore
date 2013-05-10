@@ -1,5 +1,6 @@
 *.py[co]
 .sphinx
+.pymongo
 _build/
 # Packages
 *.egg

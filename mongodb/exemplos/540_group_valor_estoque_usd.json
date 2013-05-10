@@ -1,0 +1,9 @@
+{
+    "$group" : {
+        "_id" : "$preco.moeda",
+        "_qtd" : {"$sum" : 1}
+    }
+}
+
+
+

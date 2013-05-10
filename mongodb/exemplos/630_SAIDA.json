@@ -1,0 +1,66 @@
+[
+    {
+        "titulos": [
+            "Aritmética da Emília"
+        ], 
+        "_id": "matemática"
+    }, 
+    {
+        "titulos": [
+            "Symbolic Logic & The Game of Logic", 
+            "Science Fiction Puzzle Tales"
+        ], 
+        "_id": "quebra-cabeças"
+    }, 
+    {
+        "titulos": [
+            "Introduction to Logic", 
+            "Science: Good, Bad, and Bogus"
+        ], 
+        "_id": "ciência"
+    }, 
+    {
+        "titulos": [
+            "Bancos de Dados", 
+            "Fundamentals of Database Systems"
+        ], 
+        "_id": "bancos de dados"
+    }, 
+    {
+        "titulos": [
+            "The Annotated Alice"
+        ], 
+        "_id": "jogos"
+    }, 
+    {
+        "titulos": [
+            "Bancos de Dados", 
+            "Fundamentals of Database Systems"
+        ], 
+        "_id": "relacional"
+    }, 
+    {
+        "titulos": [
+            "Science: Good, Bad, and Bogus"
+        ], 
+        "_id": "ocultismo"
+    }, 
+    {
+        "titulos": [
+            "Bancos de Dados", 
+            "Introduction to Logic", 
+            "Symbolic Logic & The Game of Logic", 
+            "Science Fiction Puzzle Tales", 
+            "The Annotated Alice"
+        ], 
+        "_id": "lógica"
+    }, 
+    {
+        "titulos": [
+            "Aritmética da Emília", 
+            "Alice no País das Maravilhas", 
+            "The Annotated Alice"
+        ], 
+        "_id": "bichos falantes"
+    }
+]

@@ -1,0 +1,9 @@
+{
+    "$project" : {
+        "titulo" : 1,
+        "idioma" : 1
+    }
+}
+
+
+

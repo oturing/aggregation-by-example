@@ -1,0 +1,17 @@
+[
+    {
+        "$project" : {
+            "assuntos" : 1,
+            "titulo" : 1
+        }
+    },
+    {
+        "$unwind" : "$assuntos"
+    },
+    {
+    	"$group" : {
+        	"_id" : "$assuntos",
+        	"titulos" : {"$addToSet" : "$titulo"}
+        }
+    }
+]

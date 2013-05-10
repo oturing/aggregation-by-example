@@ -1,0 +1,9 @@
+{
+    "$group" : {
+        "_id" : null,
+        "_qtd" : {"$sum" : "$estoque"}
+    }
+}
+
+
+

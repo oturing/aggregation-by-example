@@ -1,0 +1,10 @@
+[
+    {
+        "$project" : {
+            "assuntos" : 1
+        }
+    },
+    {
+        "$unwind": "$assuntos"
+    }
+]

@@ -1,0 +1,115 @@
+[
+    {
+        "criadores": [
+            {
+                "papel": "author", 
+                "nome": "Lewis Carroll"
+            }, 
+            {
+                "papel": "translator", 
+                "nome": "Monteiro Lobato"
+            }
+        ], 
+        "paginas": 48, 
+        "_id": "8504008320", 
+        "estoque": 13, 
+        "vendas": [
+            {
+                "qtd": 12, 
+                "ano": 2009
+            }, 
+            {
+                "qtd": 14, 
+                "ano": 2010
+            }, 
+            {
+                "qtd": 17, 
+                "ano": 2011
+            }
+        ], 
+        "preco": {
+            "moeda": "BRL", 
+            "valor": 27.9
+        }, 
+        "assuntos": [
+            "bichos falantes"
+        ], 
+        "titulo": "Alice no País das Maravilhas", 
+        "idioma": "pt-br"
+    }, 
+    {
+        "criadores": [
+            {
+                "papel": "author", 
+                "nome": "Monteiro Lobato"
+            }
+        ], 
+        "paginas": 128, 
+        "_id": "8525045942", 
+        "estoque": 8, 
+        "vendas": [
+            {
+                "qtd": 4, 
+                "ano": 2009
+            }, 
+            {
+                "qtd": 5, 
+                "ano": 2010
+            }, 
+            {
+                "qtd": 5, 
+                "ano": 2011
+            }
+        ], 
+        "preco": {
+            "moeda": "BRL", 
+            "valor": 26.0
+        }, 
+        "assuntos": [
+            "bichos falantes", 
+            "matemática"
+        ], 
+        "titulo": "Aritmética da Emília", 
+        "idioma": "pt-br"
+    }, 
+    {
+        "criadores": [
+            {
+                "papel": "author", 
+                "nome": "Valdemar W. Setzer"
+            }, 
+            {
+                "papel": "author", 
+                "nome": "Flávio Soares Corrêa da Silva"
+            }
+        ], 
+        "paginas": 380, 
+        "_id": "8521203616", 
+        "estoque": 0, 
+        "vendas": [
+            {
+                "qtd": 3, 
+                "ano": 2009
+            }, 
+            {
+                "qtd": 1, 
+                "ano": 2010
+            }, 
+            {
+                "qtd": 0, 
+                "ano": 2011
+            }
+        ], 
+        "preco": {
+            "moeda": "BRL", 
+            "valor": 26.0
+        }, 
+        "assuntos": [
+            "bancos de dados", 
+            "lógica", 
+            "relacional"
+        ], 
+        "titulo": "Bancos de Dados", 
+        "idioma": "pt-br"
+    }
+]
