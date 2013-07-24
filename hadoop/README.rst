@@ -149,6 +149,27 @@ the item at 0. In other words, ``itemgetter(0)`` is another way of saying
         print '%s\t%i' % (key, count)
 
 
+Version 4: replacing the inner loop with ``sum``
+================================================
+
+A generator expression can be used with the ``sum`` built-in function
+to do the work of the inner ``for`` loop faster, and with less code.
+It's faster because the loop implicit in ``sum`` is executed in compiled C
+code.
+
+::
+
+    import sys
+    from itertools import groupby
+    from operator import itemgetter
+
+    split_stdin = (item.split() for item in sys.stdin)
+
+    for key, group in groupby(split_stdin, itemgetter(0)):
+        count = sum(int(value) for key, value in group)
+        print '%s\t%i' % (key, count)
+
+
 
 
 
