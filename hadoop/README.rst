@@ -28,7 +28,7 @@ of the size of the input or output.
 Version 0: basic Python
 =======================
 
-Not idiomatic, but works and anyone can read::
+Not idiomatic, but works and anyone can read:
 
 ::
 
@@ -50,6 +50,14 @@ Not idiomatic, but works and anyone can read::
 
 Version 1: using `groupby` and a named function
 ===============================================
+
+The ``itertools`` module has several interesting functions that take iterables
+and return generators. Very useful for large-scale data processing.
+
+The ``itertools.groupby`` function takes an iterable with sorted keys and returns
+a generator which yields ``(key, group)`` tuples, where ``key`` is the grouping
+key and group is another generator yielding the items in each group. The second
+argument is a function used to extract the key from the input items.
 
 ::
 
@@ -83,13 +91,17 @@ Some pythonistas are not very fond of lambdas, but here is another way.
         print '%s\t%i' % (key, count)
 
 
-The main problem with anonymous functions: they have no name.
+The main problem with anonymous functions: they have no name. This often
+makes code harder to read.
 
 
-Version 2: possibly dangerous shortcut
-======================================
+Version 2: (possibly) dangerous shortcut
+========================================
 
-If you now with absolute certainty that every single line
+If you know with absolute certainty that every single line in the reduce
+input has the value 1, then you can use the whole line as key, and don't
+need to provide a function to ``grouby``, and you can simply count the
+lines in each group, instead of adding all the 1's:
 
 ::
 
@@ -103,6 +115,33 @@ If you now with absolute certainty that every single line
         print '%s\t%i' % (key.split()[0], count)
 
 
+Version 3: lazily splitting items with a generator expression
+=============================================================
+
+Versions 1 and 1b above had split each line twice, which is not elegant.
+This version uses a generator expression to convert the ``sys.stdin``
+iterable into a generator that yields each line split as a
+``[key, value]`` list.
+
+Also, instead of using a custom function or lambda to extract the key from
+the pair, here we use the ``itemgetter`` higher-order function which just
+produces a function to extract the item in at a certain index, in this case
+the item at 0. In other words, ``itemgetter(0)`` is another way of saying
+``lambda x: x[0]``.
+
+::
+
+    import sys
+    from itertools import groupby
+    from operator import itemgetter
+
+    split_stdin = (item.split() for item in sys.stdin)
+
+    for key, group in groupby(split_stdin, itemgetter(0)):
+        count = 0
+        for key, value in group:
+            count += int(value)
+        print '%s\t%i' % (key, count)
 
 
 
