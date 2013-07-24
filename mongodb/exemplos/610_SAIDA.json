@@ -1,16 +1,14 @@
 [
     {
-        "assuntos": [
-            "matemática", 
-            "quebra-cabeças", 
-            "ciência", 
-            "bancos de dados", 
-            "jogos", 
-            "relacional", 
-            "ocultismo", 
-            "lógica", 
-            "bichos falantes"
-        ], 
-        "_id": null
+        "assuntos": "bichos falantes", 
+        "_id": "0393048470"
+    }, 
+    {
+        "assuntos": "lógica", 
+        "_id": "0393048470"
+    }, 
+    {
+        "assuntos": "jogos", 
+        "_id": "0393048470"
     }
 ]

@@ -1,16 +1,15 @@
 [
     {
+        "$match" : {
+            "_id" : "0393048470"
+        }
+    },
+    {
         "$project" : {
             "assuntos" : 1
         }
     },
     {
-        "$unwind" : "$assuntos"
-    },
-    {
-    	"$group" : {
-        	"_id" : null,
-        	"assuntos" : {"$addToSet" : "$assuntos"}
-        }
+        "$unwind": "$assuntos"
     }
 ]

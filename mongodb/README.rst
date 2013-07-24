@@ -7,6 +7,8 @@
 Agregação em MongoDB
 ====================
 
+Slides de introdução ao tema: http://www.slideshare.net/ramalho/mongodb-aggregation
+
 ----------------------
 Operadores do pipeline
 ----------------------
@@ -27,6 +29,7 @@ Contents:
    project
    match
    group
+   unwind
    dados/livraria
    alternativas
 
