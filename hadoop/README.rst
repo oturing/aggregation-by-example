@@ -121,7 +121,8 @@ Version 3: lazily splitting items with a generator expression
 Versions 1 and 1b above split each line twice, which is wasteful.
 This version uses a generator expression to convert the ``sys.stdin``
 iterable into a generator that yields each line split as a
-``[key, value]`` list.
+``[key, value]`` list. Generator expressions are lazy: they produce
+a generator which yield the processed items on demand.
 
 Also, instead of using a custom function to extract the key from the pair,
 here we use the ``itemgetter`` higher-order function which just produces
