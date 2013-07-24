@@ -48,16 +48,20 @@ Not idiomatic, but works and anyone can read:
             sum = 1
     print '%s\t%i' % (previous_key, sum)
 
-Version 1: using `groupby` and a named function
-===============================================
+Version 1: using ``groupby`` and a named function
+=================================================
 
 The ``itertools`` module has several interesting functions that take iterables
 and return generators. Very useful for large-scale data processing.
 
-The ``itertools.groupby`` function takes an iterable with sorted keys and returns
-a generator which yields ``(key, group)`` tuples, where ``key`` is the grouping
-key and group is another generator yielding the items in each group. The second
-argument is a function used to extract the key from the input items.
+The ``itertools.groupby`` function takes an iterable with sorted keys and
+returns a generator which yields ``(key, group)`` tuples, where ``key`` is
+the grouping key and ``group`` is another generator yielding the items in each
+group. The result of ``groupby`` usually processed using nested ``for`` loops,
+as in this example.
+
+The second argument to ``groupby`` is a function used to extract the key from
+each input item.
 
 ::
 
