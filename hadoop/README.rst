@@ -100,7 +100,7 @@ Version 2: (possibly) dangerous shortcut
 
 If you know with absolute certainty that every single line in the reduce
 input has the value 1, then you can use the whole line as key, and don't
-need to provide a function to ``grouby``, and you can simply count the
+need to provide a function to ``grouby``. You can simply count the
 lines in each group, instead of adding all the 1's:
 
 ::
@@ -123,9 +123,9 @@ This version uses a generator expression to convert the ``sys.stdin``
 iterable into a generator that yields each line split as a
 ``[key, value]`` list.
 
-Also, instead of using a custom function or lambda to extract the key from
-the pair, here we use the ``itemgetter`` higher-order function which just
-produces a function to extract the item in at a certain index, in this case
+Also, instead of using a custom function to extract the key from the pair,
+here we use the ``itemgetter`` higher-order function which just produces
+a function to extract the item in at a certain index, in this case
 the item at 0. In other words, ``itemgetter(0)`` is another way of saying
 ``lambda x: x[0]``.
 
