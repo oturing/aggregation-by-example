@@ -57,8 +57,8 @@ and return generators. Very useful for large-scale data processing.
 The ``itertools.groupby`` function takes an iterable with sorted keys and
 returns a generator which yields ``(key, group)`` tuples, where ``key`` is
 the grouping key and ``group`` is another generator yielding the items in each
-group. The result of ``groupby`` usually processed using nested ``for`` loops,
-as in this example.
+group. The result of ``groupby`` is usually processed using two nested ``for``
+loops, as in this example.
 
 The second argument to ``groupby`` is a function used to extract the key from
 each input item.
@@ -126,7 +126,7 @@ Versions 1 and 1b above split each line twice, which is wasteful.
 This version uses a generator expression to convert the ``sys.stdin``
 iterable into a generator that yields each line split as a
 ``[key, value]`` list. Generator expressions are lazy: they produce
-a generator which yield the processed items on demand.
+a generator which yields the processed items on demand.
 
 Also, instead of using a custom function to extract the key from the pair,
 here we use the ``itemgetter`` higher-order function which just produces
