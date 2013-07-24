@@ -118,14 +118,14 @@ lines in each group, instead of adding all the 1's:
 Version 3: lazily splitting items with a generator expression
 =============================================================
 
-Versions 1 and 1b above had split each line twice, which is not elegant.
+Versions 1 and 1b above split each line twice, which is wasteful.
 This version uses a generator expression to convert the ``sys.stdin``
 iterable into a generator that yields each line split as a
 ``[key, value]`` list.
 
 Also, instead of using a custom function to extract the key from the pair,
 here we use the ``itemgetter`` higher-order function which just produces
-a function to extract the item in at a certain index, in this case
+a function to extract the item at a certain index, in this case
 the item at 0. In other words, ``itemgetter(0)`` is another way of saying
 ``lambda x: x[0]``.
 
